@@ -1,0 +1,285 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "17.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 785, 485 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+				"$columnCount": 7
+				"$rowCount": 1
+				"hGap": 0
+				"vGap": 0
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 102, 102, 255, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblLogo"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/logo for nav Preview (1).jpg" )
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lblLogoMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"anchor": 8
+					"hSizePolicy": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblWelcomMessage"
+					"text": "Welcome User"
+					"font": new java.awt.Font( "Segoe UI", 1, 16 )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 1
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSearch"
+					"text": "Search"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/search 24x24.png" )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSearch", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSearch", true ) )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 2
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnMyaccount"
+					"text": "My Account"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/my account 2 24x24.png" )
+					"cursor": #Cursor0
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "btnMyaccountMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 3
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnCart"
+					"text": "Cart"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cart 24x24.png" )
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnCart", true ) )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 5
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel3"
+				add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+					name: "tabbedPane1"
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+						"$columnCount": 1
+						"$rowCount": 1
+						"hGap": 5
+					} ) {
+						name: "panelHome"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": "TAB 0"
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) )
+					}, new FormLayoutConstraints( null ) {
+						"title": "Home"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/Home Icon 24x24.png" )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+						"$columnCount": 2
+						"$rowCount": 2
+						"hGap": 5
+					} ) {
+						name: "panelSearch"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "lblSearchicon"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/search 24x24.png" )
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"anchor": 5
+							"hSizePolicy": 0
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtSearch"
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"preferredSize": new java.awt.Dimension( 600, 30 )
+							"column": 1
+							"anchor": 9
+							"hSizePolicy": 2
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "Search"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/search 24x24.png" )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "panelMyAccount"
+						add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+							name: "tabbedPane2"
+							"tabPlacement": 2
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+								"$columnCount": 1
+								"$rowCount": 1
+								"hGap": 5
+							} ) {
+								name: "panelMyOrders"
+							}, new FormLayoutConstraints( null ) {
+								"title": "My Orders"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+								"$columnCount": 1
+								"$rowCount": 1
+								"hGap": 5
+							} ) {
+								name: "panelMyAddresses"
+							}, new FormLayoutConstraints( null ) {
+								"title": "My Addresses"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+								"$columnCount": 2
+								"$rowCount": 7
+								"hGap": 10
+							} ) {
+								name: "panelYourProfile"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "lblprofilefirstname"
+									"text": "First Name"
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"anchor": 4
+									"hSizePolicy": 0
+								} )
+								add( new FormComponent( "javax.swing.JTextArea" ) {
+									name: "txtProfileFirstName"
+									"preferredSize": new java.awt.Dimension( 250, 30 )
+									"background": &Color0 new java.awt.Color( 204, 204, 204, 255 )
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"column": 1
+									"anchor": 8
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "lblprofilelastname"
+									"text": "Last Name"
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 1
+									"anchor": 4
+									"hSizePolicy": 0
+								} )
+								add( new FormComponent( "javax.swing.JTextArea" ) {
+									name: "txtProfileLastName"
+									"preferredSize": new java.awt.Dimension( 250, 30 )
+									"background": #Color0
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 1
+									"column": 1
+									"anchor": 8
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "lblprofileemial"
+									"text": "Email"
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 2
+									"anchor": 4
+									"hSizePolicy": 0
+									"useParentLayout": false
+									"indent": 10
+								} )
+								add( new FormComponent( "javax.swing.JTextArea" ) {
+									name: "txtProfileEmail"
+									"preferredSize": new java.awt.Dimension( 250, 30 )
+									"background": #Color0
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 2
+									"column": 1
+									"anchor": 8
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "lblprofilephone"
+									"text": "Phone Number"
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 3
+									"anchor": 4
+									"hSizePolicy": 0
+								} )
+								add( new FormComponent( "javax.swing.JTextArea" ) {
+									name: "txtProfilePhone"
+									"preferredSize": new java.awt.Dimension( 250, 30 )
+									"background": #Color0
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 3
+									"column": 1
+									"anchor": 8
+									"useParentLayout": false
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "lblprofilepassword"
+									"text": "Password"
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 4
+									"anchor": 4
+									"hSizePolicy": 0
+								} )
+								add( new FormComponent( "javax.swing.JPasswordField" ) {
+									name: "txtProfilePassword"
+									"preferredSize": new java.awt.Dimension( 250, 30 )
+									"background": #Color0
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 4
+									"column": 1
+									"anchor": 8
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "lblprofilegender"
+									"text": "Gender"
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 5
+									"anchor": 4
+									"hSizePolicy": 0
+								} )
+								add( new FormComponent( "javax.swing.JTextArea" ) {
+									name: "txtProfileGender"
+									"preferredSize": new java.awt.Dimension( 250, 30 )
+									"background": #Color0
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 5
+									"column": 1
+									"anchor": 8
+								} )
+							}, new FormLayoutConstraints( null ) {
+								"title": "Your Profile"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+								"$columnCount": 1
+								"$rowCount": 1
+								"hGap": 5
+							} ) {
+								name: "panelLogout"
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "btnLogout"
+									"text": "Log Out"
+									addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnLogout", true ) )
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) )
+							}, new FormLayoutConstraints( null ) {
+								"title": "Log Out?"
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Center"
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "My Account"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/my account 2 24x24.png" )
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+						"$columnCount": 1
+						"$rowCount": 1
+						"hGap": 5
+					} ) {
+						name: "panelCart"
+					}, new FormLayoutConstraints( null ) {
+						"title": "Cart"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/cart 24x24.png" )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 785, 485 )
+		} )
+	}
+}

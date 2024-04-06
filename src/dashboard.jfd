@@ -1,0 +1,72 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "17.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+				name: "navpanel"
+				"background": new java.awt.Color( 102, 102, 255, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblLogo"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/logo for nav Preview (1).jpg" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Welcome User"
+					"foreground": sfield java.awt.Color white
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSearch"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/search 24x24.png" )
+					"text": "Search"
+					"horizontalAlignment": 4
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnMyAccount"
+					"text": "My Account"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/my account 2 24x24.png" )
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					"horizontalAlignment": 4
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnCart"
+					"text": "Cart"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/cart 24x24.png" )
+					"cursor": #Cursor0
+					"horizontalAlignment": 4
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 855
+				"height": 75
+				"x": 0
+				"y": 0
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+				"autoSize": false
+			} ) {
+				name: "bgpanel"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+					"autoSize": false
+				} ) {
+					name: "contentpanel"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 0
+					"y": 75
+					"width": 855
+					"height": 395
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 855
+				"height": 470
+				"x": 0
+				"y": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 855, 500 )
+		} )
+	}
+}
