@@ -78,6 +78,7 @@ public class LoginPage extends JFrame {
                 user.LastName = result.getString("lastname");
                 user.Email = result.getString("email");
                 user.Phone = String.valueOf(result.getInt("phone"));
+                user.CustomerID = result.getInt("customer_id");
                 user.Password = result.getString("pass");
             }
             con.close();

@@ -6,6 +6,7 @@ public class index {
     public String Email;
     public String Phone;
     public String Password;
+    public int CustomerID;
 
 
     public static void main(String[] args){

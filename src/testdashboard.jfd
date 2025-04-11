@@ -72,17 +72,126 @@ new FormModel {
 						"hGap": 5
 					} ) {
 						name: "panelHome"
-						add( new FormComponent( "javax.swing.JLabel" ) {
-							name: "label2"
-							"text": "TAB 0"
-						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+							"$columnCount": 3
+							"$rowCount": 5
+							"hGap": 5
+						} ) {
+							name: "panelhometab"
+							"background": new java.awt.Color( 102, 255, 255, 255 )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label1"
+								"text": "Personalized Meal Service App"
+								"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 14, false )
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 1
+								"hSizePolicy": 0
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label2"
+								"text": "Created By"
+								"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 1, 7, false )
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"row": 1
+								"column": 1
+								"anchor": 1
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label3"
+								"text": "Piyush S Pawar"
+								"font": #SwingDerivedFont0
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"row": 2
+								"vSizePolicy": 0
+								"indent": 5
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label4"
+								"text": "Siddhesh A Patil"
+								"font": #SwingDerivedFont0
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 1
+								"row": 2
+								"vSizePolicy": 0
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label5"
+								"text": "Siddhesh S Patil"
+								"font": #SwingDerivedFont0
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 2
+								"row": 2
+								"vSizePolicy": 0
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label6"
+								"text": "122B1B221"
+								"font": #SwingDerivedFont0
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"row": 3
+								"vSizePolicy": 0
+								"indent": 5
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label7"
+								"text": "122B1B217"
+								"font": #SwingDerivedFont0
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 1
+								"row": 3
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label8"
+								"text": "122B1B216"
+								"font": #SwingDerivedFont0
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 2
+								"row": 3
+								"vSizePolicy": 0
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+								"$columnCount": 1
+								"$rowCount": 2
+								"hGap": 0
+								"vGap": 0
+							} ) {
+								name: "panel4"
+								"background": sfield java.awt.Color lightGray
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label9"
+									"text": "Copyright © Personalized Meal Service App 2024"
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) )
+								add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+									name: "scrollPane2"
+									add( new FormComponent( "javax.swing.JTextArea" ) {
+										name: "txtArea"
+										"text": "This project is the property of Personalized Meal Service App Team. It is intended for academic purposes and may not be reproduced or distributed without proper citation or permission. Any unauthorized use or distribution is strictly prohibited. "
+										"lineWrap": true
+										"wrapStyleWord": true
+									} )
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 1
+									"fill": 3
+									"useParentLayout": false
+								} )
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"row": 4
+								"colSpan": 3
+								"fill": 3
+							} )
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"preferredSize": new java.awt.Dimension( 500, 300 )
+							"anchor": 1
+							"useParentLayout": false
+							"fill": 1
+						} )
 					}, new FormLayoutConstraints( null ) {
 						"title": "Home"
 						"icon": new com.jformdesigner.model.SwingIcon( 0, "/Home Icon 24x24.png" )
 					} )
 					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
-						"$columnCount": 2
-						"$rowCount": 2
+						"$columnCount": 4
+						"$rowCount": 3
 						"hGap": 5
 					} ) {
 						name: "panelSearch"
@@ -92,14 +201,70 @@ new FormModel {
 						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
 							"anchor": 5
 							"hSizePolicy": 0
+							"vSizePolicy": 0
 						} )
 						add( new FormComponent( "javax.swing.JTextField" ) {
 							name: "txtSearch"
 						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
-							"preferredSize": new java.awt.Dimension( 600, 30 )
 							"column": 1
 							"anchor": 9
 							"hSizePolicy": 2
+							"vSizePolicy": 0
+							"fill": 1
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnSearchresult"
+							"text": "Search"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSearchresult", true ) )
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 2
+							"anchor": 9
+							"vSizePolicy": 0
+							"hSizePolicy": 0
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "lblRestaurantID"
+							"text": "Enter Restaurant ID to view menu:"
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 1
+							"row": 1
+							"anchor": 4
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "txtResID"
+							"preferredSize": new java.awt.Dimension( 140, 22 )
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 2
+							"row": 1
+							"anchor": 8
+							"hSizePolicy": 0
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btnViewMenu"
+							"text": "View Menu"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnViewMenu", true ) )
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 3
+							"row": 1
+							"hSizePolicy": 0
+							"anchor": 8
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+							name: "JpanelSearchResult"
+							"background": new java.awt.Color( 153, 153, 153, 255 )
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollpanelSearchResult"
+								"background": new java.awt.Color( 204, 204, 204, 255 )
+								add( new FormComponent( "javax.swing.JTable" ) {
+									name: "tableRestaurants"
+									"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector, new java.util.Vector, new java.util.Vector, new java.util.Vector )
+								} )
+							} )
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"column": 1
+							"row": 2
+							"fill": 3
+							"colSpan": 2
 						} )
 					}, new FormLayoutConstraints( null ) {
 						"title": "Search"
@@ -120,11 +285,103 @@ new FormModel {
 								"title": "My Orders"
 							} )
 							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
-								"$columnCount": 1
-								"$rowCount": 1
+								"$columnCount": 2
+								"$rowCount": 7
 								"hGap": 5
 							} ) {
 								name: "panelMyAddresses"
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "btnrefreshaddress"
+									"text": "Refresh Address"
+									addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnrefreshaddress", true ) )
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "btnupdateaddress"
+									"text": "Update Address"
+									addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnupdateaddress", true ) )
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"column": 1
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "lblstreet"
+									"text": "Street: "
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"anchor": 4
+									"row": 1
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "txtstreet"
+									"editable": false
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"column": 1
+									"minimumSize": new java.awt.Dimension( 400, 22 )
+									"anchor": 8
+									"row": 1
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "lblcity"
+									"text": "City: "
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 2
+									"anchor": 4
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "txtcity"
+									"editable": false
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"column": 1
+									"row": 2
+									"preferredSize": &Dimension0 new java.awt.Dimension( 200, 22 )
+									"anchor": 8
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "lblstate"
+									"text": "State: "
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 3
+									"anchor": 4
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "txtstate"
+									"editable": false
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 3
+									"preferredSize": #Dimension0
+									"anchor": 8
+									"column": 1
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "lblpincode"
+									"text": "Pin Code: "
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 4
+									"anchor": 4
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "txtpincode"
+									"editable": false
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 4
+									"preferredSize": #Dimension0
+									"anchor": 8
+									"column": 1
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "lblcountry"
+									"text": "Country: "
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 5
+									"anchor": 4
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "txtcountry"
+									"editable": false
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"row": 5
+									"preferredSize": #Dimension0
+									"anchor": 8
+									"column": 1
+								} )
 							}, new FormLayoutConstraints( null ) {
 								"title": "My Addresses"
 							} )
@@ -263,23 +520,167 @@ new FormModel {
 					} )
 					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
 						"$columnCount": 1
-						"$rowCount": 1
+						"$rowCount": 3
 						"hGap": 5
 					} ) {
 						name: "panelCart"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+							"$columnCount": 5
+							"$rowCount": 5
+							"hGap": 0
+							"vGap": 0
+						} ) {
+							name: "panel1"
+							"background": sfield java.awt.Color lightGray
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblChangeQuanMessage"
+								"text": "Change Quantity"
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 1
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblEnterDishID"
+								"text": "Enter Dish ID to change quantity:"
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"row": 1
+								"anchor": 4
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "txtDishID"
+								"preferredSize": new java.awt.Dimension( 120, 22 )
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 1
+								"row": 1
+								"anchor": 8
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblEnterQuantity"
+								"text": "Enter new quantity:"
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 2
+								"row": 1
+								"hSizePolicy": 0
+							} )
+							add( new FormComponent( "javax.swing.JSpinner" ) {
+								name: "spinnerNewQuantity"
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 3
+								"row": 1
+								"anchor": 8
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "btnChangeQuantity"
+								"text": "Change Quantity"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnChangeQuantity", true ) )
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 4
+								"row": 1
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblRemoveTitle"
+								"text": "Remove Item"
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 1
+								"row": 2
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblEnterIDtoremove"
+								"text": "Enter ID to remove item from cart: "
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"row": 3
+								"anchor": 4
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "txtremoveDishID"
+								"preferredSize": new java.awt.Dimension( 120, 22 )
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 1
+								"row": 3
+								"anchor": 8
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "btnRemoveItem"
+								"text": "Remove Item"
+								addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnRemoveItem", true ) )
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 2
+								"row": 3
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "lblFinalAmount"
+								"text": "Final Amount:"
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 1
+								"row": 4
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "txtFinalAmount"
+								"editable": false
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"column": 2
+								"row": 4
+								"preferredSize": new java.awt.Dimension( 120, 22 )
+							} )
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"fill": 3
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+							"$columnCount": 2
+							"$rowCount": 2
+							"hGap": 0
+							"vGap": 0
+						} ) {
+							name: "panel5"
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+								"$columnCount": 2
+								"$rowCount": 1
+								"hGap": 5
+							} ) {
+								name: "panel6"
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "btnPlaceOrder"
+									"text": "Place Order"
+									"background": new java.awt.Color( 0, 255, 255, 255 )
+									addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnPlaceOrder", true ) )
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "btnRefreshCart"
+									"text": "Refresh Cart"
+									addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnRefreshCart", true ) )
+								}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+									"column": 1
+								} )
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"fill": 3
+							} )
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPane1"
+								add( new FormComponent( "javax.swing.JTable" ) {
+									name: "tableCart2"
+								} )
+							}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+								"row": 1
+								"fill": 1
+								"indent": 4
+								"useParentLayout": false
+							} )
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"row": 1
+							"fill": 3
+						} )
 					}, new FormLayoutConstraints( null ) {
 						"title": "Cart"
 						"icon": new com.jformdesigner.model.SwingIcon( 0, "/cart 24x24.png" )
 					} )
 				}, new FormLayoutConstraints( class java.lang.String ) {
-					"value": "Center"
+					"value": "North"
 				} )
 			}, new FormLayoutConstraints( class java.lang.String ) {
 				"value": "Center"
 			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 785, 485 )
+			"size": new java.awt.Dimension( 775, 485 )
 		} )
 	}
 }

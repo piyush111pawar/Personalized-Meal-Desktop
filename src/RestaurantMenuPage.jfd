@@ -1,0 +1,171 @@
+JFDML JFormDesigner: "8.2.1.0.348" Java: "17.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"$sizePolicy": 1
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+				"$columnCount": 7
+				"$rowCount": 1
+				"hGap": 0
+				"vGap": 0
+			} ) {
+				name: "panel2"
+				"background": new java.awt.Color( 102, 102, 255, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblLogo"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/logo for nav Preview (1).jpg" )
+					"cursor": new java.awt.Cursor( 12 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lblLogoMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"anchor": 8
+					"hSizePolicy": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblAppName"
+					"text": "Personalized Meal Service App"
+					"font": new java.awt.Font( "Segoe UI", 1, 22 )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"column": 1
+					"anchor": 8
+					"indent": 3
+					"fill": 1
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+				"$columnCount": 1
+				"$rowCount": 2
+				"hGap": 0
+				"vGap": 0
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+					"$columnCount": 5
+					"$rowCount": 5
+					"hGap": 0
+					"vGap": 0
+				} ) {
+					name: "panel4"
+					"background": sfield java.awt.Color lightGray
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lblRestaurantName"
+						"text": "Name Of Restaurant"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 16, false )
+					}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+						"anchor": 8
+						"indent": 2
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lblResLocation"
+						"text": "Location"
+					}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+						"row": 1
+						"anchor": 8
+						"indent": 3
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lblContactNo"
+						"text": "Restaurant Contact Number: "
+					}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+						"row": 2
+						"anchor": 8
+						"indent": 3
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "lblResDescription"
+							"text": "Experience the freshest sushi and sashimi in town, along with traditional Japanese dishes."
+							"foreground": sfield java.awt.Color gray
+							"lineWrap": true
+							"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"editable": false
+							"wrapStyleWord": true
+						} )
+					}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+						"row": 3
+						"anchor": 8
+						"indent": 3
+						"vSizePolicy": 0
+						"fill": 3
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lblGetMenuID"
+						"text": "Enter MenuID to add to cart"
+					}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+						"row": 4
+						"anchor": 4
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "txtMenuID"
+						"preferredSize": new java.awt.Dimension( 100, 22 )
+						"toolTipText": "Enter Menu ID"
+					}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+						"column": 1
+						"row": 4
+						"indent": 1
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Quantity: "
+					}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+						"column": 2
+						"row": 4
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinnerQuantity"
+					}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+						"column": 3
+						"row": 4
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btnAddtoCart"
+						"text": "Add to Cart"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnAddtoCart", true ) )
+					}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+						"column": 4
+						"row": 4
+						"indent": 1
+					} )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"vSizePolicy": 0
+					"useParentLayout": false
+					"fill": 3
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel5"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+						"$columnCount": 1
+						"$rowCount": 1
+						"hGap": 0
+						"vGap": 0
+					} ) {
+						name: "panel6"
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane4"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "tableResMenu"
+								"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							} )
+						}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+							"fill": 1
+							"indent": 2
+						} )
+					} )
+				}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+					"row": 1
+					"fill": 3
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 770, 480 )
+		} )
+	}
+}

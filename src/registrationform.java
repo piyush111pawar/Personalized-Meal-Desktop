@@ -58,7 +58,7 @@ public class registrationform extends JFrame {
                 return;
             }
 
-            String query = "insert into RegisteredUsers(firstname,lastname,email,phone,pass) values(?,?,?,?,?)";
+            String query = "insert into RegisteredUsers(firstname,lastname,email,phone,pass,customer_id) values(?,?,?,?,?,seq_customer_id.nextval)";
             PreparedStatement st = con.prepareStatement(query);
             st.setString(1, FirstName);
             st.setString(2, LastName);
